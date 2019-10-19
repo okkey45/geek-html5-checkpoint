@@ -3,15 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Waxom : Portfolio PSD Template</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
-	<header>
+	<header class="main-header">
 		<div class="container">
 			<nav class="navbar">
-				<a href="#" class="brand-wrapper">
-					<img src="./img/logo.svg" alt="Waxom Logo" class="brand-logo-img">
+				<span class="brand-wrapper">
+					<img src="./img/logo.svg" alt="Waxom Logo" class="brand-logo-img" width="64" height="56">
 					<h1 class="brand-logo-title homepage-logo-title">Waxom</h1>
-				</a>
+				</span>
 				<ul class="main-menu-list">
 					<li class="main-menu-list-item"><a class="main-menu-list-item-link">Home</a></li>
 					<li class="main-menu-list-item"><a class="main-menu-list-item-link">About Us</a></li>
@@ -25,14 +28,16 @@
 				<button class="icon-header icon-cart"></button>
 				<button class="icon-header icon-search"></button>
 			</nav>
-		</div><!-- .container -->
+		</div>
 		<div class="slider-wrapper">
 			<div class="slider-item-wrapper">
-				<img src="./img/photo_1.png" alt="" class="slider-item-img">
-				<p class="slider-item-subtitle">Unique and Modern Design</p>
-				<h2 class="slider-item-title">Portfolio PSD Template</h2>
-				<p class="slider-item-description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-				<a href="#" class="btn">Get Started</a>
+				<img src="./img/photo_1.png" alt="Slide 1" class="slider-item-img">
+				<div class="slider-item-offer">
+					<p class="slider-item-subtitle">Unique and Modern Design</p>
+					<h2 class="slider-item-title">Portfolio PSD Template</h2>
+					<p class="slider-item-description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+					<a href="#" class="btn">Get Started</a>
+				</div>
 			</div>
 			<a href="#" class="slider-control prev"></a>
 			<a href="#" class="slider-control next"></a>
@@ -45,7 +50,7 @@
 			</div>
 		</div>
 	</header>
-	<main>
+<!-- 	<main>
 		<section class="services container">
 			<div class="services-item-wrapper">
 				<span class="services-item-icon"></span>
@@ -68,8 +73,6 @@
 				<p class="services-item-description"></p>
 			</div>
 		</section>
-		<!-- Вопрос по блоку START -->
-		<!-- Здесть вроде как карусельв карусели, или просто одна карусель, а в ней три скриншота? -->
 		<section class="ideas">
 			<h2 class="section-title">Waxom is Realization of your Ideas.</h2>
 			<p class="section-subtitle">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
@@ -141,7 +144,6 @@
 				<a href="#" class="btn">Purchase Now</a>
 			</div>
 		</section>
-		<!-- Вопрос по блоку END -->
 		<section class="projects container">
 			<h2 class="section-title">Our Latest Projects.</h2>
 			<p class="section-subtitle">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
@@ -186,8 +188,6 @@
 			</div>
 			<button class="btn btn-load-more">Load More</button>
 		</section>
-		<!-- Вопрос по блоку START -->
-		<!-- Натыкайте носом плиз, где можно почитать или подглядеть такую реализацию. Насколько я понял, по кнопке должно запуститься видео, а до нажатия должен висеть постер. -->
 		<section class="presentation">
 			<button class="btn-video-play"></button>
 			<h3 class="presentation-video-title">Waxom Video Presentation</h3>
@@ -195,20 +195,16 @@
 			<video src="#" poster="./img/poster.jpg">
 			</video>
 		</section>
-		<!-- Вопрос по блоку END -->
 		<section class="mobile-devices">
 			<img src="./img/iphone.png" alt="Excellent for Mobile Devices." class="mobile-devices-img">
 			<h2 class="section-title"></h2>
 			<p>Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-			<!-- Вопрос по блоку START -->
-			<!-- Не понятно что должно быть, поэтому пока разметил так. -->
 			<ul class="mobile-devices-list">
 				<li class="mobile-devices-item"></li>
 				<li class="mobile-devices-item"></li>
 				<li class="mobile-devices-item"></li>
 				<li class="mobile-devices-item"></li>
 			</ul>
-			<!-- Вопрос по блоку END -->
 		</section>
 		<section class="skills">
 			<div class="container">
@@ -335,6 +331,6 @@
 				</ul>
 			</div>
 		</section>
-	</footer>
+	</footer> -->
 </body>
 </html>
