@@ -21,10 +21,25 @@
 	    margin: 0 auto;
 	    border-bottom: 3px solid #f1eee9;
 	    box-sizing: border-box;
+	    @include animate(all, 320ms);
 	}
-	&.active {
+	&:hover {
 		.services-item-link {
 			color: $pr-color;
+		}
+		.services-item-icon {
+			&.icon-design {
+				background-image: url(../img/icon_pencil_h.svg);
+			}
+			&.icon-development {
+				background-image: url(../img/icon_layer_h.svg);
+			}
+			&.icon-customization {
+				background-image: url(../img/icon_gear_h.svg);
+			}
+			&.icon-marketing {
+				background-image: url(../img/icon_bag_h.svg);
+			}
 		}
 		&:after {
 		    border-bottom-color: $pr-color;
@@ -37,24 +52,18 @@
 	background-size: contain;
 	background-position: center;
 	margin: 0 auto 29px;
+	width: 49px;
+	height: 49px;
 	&.icon-design {
-		width: 49px;
-		height: 49px;
 		background-image: url(../img/icon_pencil.svg);
 	}
 	&.icon-development {
-		width: 49px;
-		height: 49px;
 		background-image: url(../img/icon_layer.svg);
 	}
 	&.icon-customization {
-		width: 49px;
-		height: 49px;
 		background-image: url(../img/icon_gear.svg);
 	}
 	&.icon-marketing {
-		width: 49px;
-		height: 49px;
 		background-image: url(../img/icon_bag.svg);
 	}
 }
