@@ -1,0 +1,13 @@
+@charset "UTF-8";
+$body-font : 'Montserrat', sans-serif; /* 200, 300, 400*/
+$title-font : 'Raleway', sans-serif; /* 400, 500, 600, 700, 800*/
+
+$pr-color : #c7b299;
+$sec-color : #00bff3;
+$bg-color : #fbfaf8;
+$title-txt-color : #555555;
+$body-txt-color : #8c8c8c;
+$btn-color : #998675;
+$btn-hover-color : darken($btn-color, 20%);
+$btn-active-color : lighten($btn-color, 20%);
+$brd-color : #ebebeb;

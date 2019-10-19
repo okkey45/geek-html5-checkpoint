@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import './base/reset';
+@import './base/variables';
+@import 'base/mixins';
+body {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.container {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+a {
+	cursor: pointer;
+	@include animate(all, 320ms);	
+}
+.btn {
+	width: 170px;
+	height: 53px;
+	background-color: $btn-color;
+	border-radius: 3.0px;
+	font-family: $title-font;
+	font-size: 14px;
+	line-height: 53px;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #ffffff;
+	@include animate(all, 320ms);
+	&:hover {
+		background-color: $btn-hover-color;
+	}
+	&:active {
+		background-color: $btn-active-color;
+	}
+}
+@import './header';
