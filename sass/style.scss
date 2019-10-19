@@ -2,6 +2,7 @@
 @import './base/reset';
 @import './base/variables';
 @import 'base/mixins';
+@import 'base/typography';
 body {
 	max-width: 1920px;
 	margin: 0 auto;
@@ -36,3 +37,4 @@ a {
 	}
 }
 @import './header';
+@import './base/page-front';
