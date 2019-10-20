@@ -40,5 +40,35 @@ a {
 		background-color: $btn-active-color;
 	}
 }
+.btn-filter {
+	display: inline-block;
+	width: auto;
+	height: 32px;
+	margin: 0 10px 10px;
+	padding: 0 18px;
+	border: 1.0px solid $brd-color;
+	border-radius: 3.0px;
+
+	line-height: 32px;
+	box-sizing: border-box;
+	&.active {
+		color: #fff;
+		border: 1.0px solid $btn-color;
+		background-color: $btn-color;
+		cursor: no-drop;
+	}
+}
+.btn-filter:not(.active) {
+	&:hover {
+		color: #fff;
+		border: 1.0px solid $btn-hover-color;
+		background-color: $btn-hover-color;
+	}
+	&:active {
+		color: #fff;
+		border: 1.0px solid $btn-active-color;
+		background-color: $btn-active-color;
+	}
+}
 @import './header';
 @import './base/page-front';

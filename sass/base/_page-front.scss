@@ -153,3 +153,117 @@
 		SECTION PROJECTS
 	=======================
 */
+.projects .section-subtitle {
+	margin-bottom: 56px;
+}
+.projects-filter {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 30px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.project-items-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.project-item-wrp {
+	margin-bottom: 30px;
+	background-color: $bg-color;
+
+	&:hover {
+		.project-img-wrp {
+			.overlay {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: $bg-dark-color;
+				opacity: .8;
+			}
+			.project-item-link-big-img,
+			.project-item-link {
+				opacity: 1;
+				z-index: 10;
+			}
+		}
+		.project-item-txt {
+			background-color: $bg-dark-color;
+			&:before {
+				border-bottom-color: $bg-dark-color;
+			}
+		}
+		.project-item-title {
+			color: #fff;
+		}
+		.project-item-category {
+			color: $pr-color;
+		}
+	}
+}
+.project-img-wrp {
+	position: relative;
+	.overlay {
+		opacity: 0;
+		@include animate(all, 320ms);
+	}
+}
+.project-item-link-big-img {
+	position: absolute;
+    top: calc(50% - 13px);
+    left: 38%;
+	width: 26px;
+	height: 26px;
+	background-image: url(../img/icon_link.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	opacity: 0;
+	z-index: -1;
+}
+.project-item-link {
+	position: absolute;
+    top: calc(50% - 13px);
+    right: 38%;
+	width: 26px;
+	height: 26px;
+	background-image: url(../img/icon_lupa.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	opacity: 0;
+	z-index: -1;
+}
+.project-item-img {
+	display: block;
+}
+.project-item-txt {
+	position: relative;
+	padding: 30px;
+	background-color: $bg-color;
+	@include animate(all, 320ms);
+	&:before {
+		position: absolute;
+	    content: "";
+	    width: 0;
+	    height: 0;
+	    top: -10px;
+	    border-left: 15px solid transparent;
+	    border-right: 15px solid transparent;
+	    border-bottom: 10px solid $bg-color;
+	    @include animate(all, 320ms);
+	}
+}
+.project-item-title {
+	color: $pr-color;
+	margin-bottom: 5px;
+}
+.btn-load-more {
+	display: block;
+	border: none;
+	cursor: pointer;
+	margin: 0 auto;
+}
