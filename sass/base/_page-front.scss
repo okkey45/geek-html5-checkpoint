@@ -317,3 +317,56 @@
 video {
 	width: 100%;
 }
+/*
+	=======================
+		MOBILE DEVICES
+	=======================
+*/
+.mobile-devices {
+	padding-bottom: 0;
+}
+.mobile-devices-img {
+    float: left;
+}
+.mobile-devices-txt-wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    min-height: 616px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.mobile-devices .section-title {
+	margin-bottom: 40px;
+}
+.mobile-devices p {
+	font-size: 16px;
+	line-height: 28px;
+	margin-bottom: 40px;
+}
+.mobile-devices-list {
+	list-style-type: none;
+}
+.mobile-devices-item {
+	font-size: 16px;
+	line-height: 32px;
+	vertical-align: middle;
+	&:before {
+		content: "";
+	    display: inline-block;
+	    width: 21px;
+	    height: 21px;
+	    background-image: url(../img/icon_list.svg);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    vertical-align: middle;
+	    margin-right: 30px;
+	}
+}
+/*
+	=======================
+		SECTION SKILLS
+	=======================
+*/
