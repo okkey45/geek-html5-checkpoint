@@ -2,6 +2,7 @@
 @import './base/reset';
 @import './base/variables';
 @import 'base/mixins';
+@import 'base/helpers';
 @import 'base/typography';
 body {
 	max-width: 1920px;
@@ -11,23 +12,26 @@ body {
 	position: relative;
 	width: 1200px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 a {
 	cursor: pointer;
 	@include animate(all, 320ms);	
 }
 .btn {
+	display: inline-block;
 	width: 170px;
 	height: 53px;
 	background-color: $btn-color;
 	border-radius: 3.0px;
 	font-family: $title-font;
 	font-size: 14px;
-	line-height: 53px;
 	font-weight: 800;
+	text-align: center;
 	text-transform: uppercase;
-	color: #ffffff;
+	line-height: 53px;
+	color: #fff;
 	@include animate(all, 320ms);
 	&:hover {
 		background-color: $btn-hover-color;
