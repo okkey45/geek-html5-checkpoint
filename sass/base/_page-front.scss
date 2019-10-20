@@ -415,3 +415,126 @@ video {
 		SECTION RECENT POSTS
 	=======================
 */
+.recent-post-carousel {
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.recent-post-item {
+	width: 370px;
+	margin-bottom: 30px;
+	&:hover {
+		.overlay {
+			opacity: .8;
+		}
+		.recent-post-item-date {
+			&.num {
+				background-color: $pr-color;
+			}
+			&.month {
+				background-color: darken($pr-color, 20%);
+			}
+		}
+		.recent-post-body {
+			background-color: $bg-dark-color;
+			border: 1.0px solid $bg-dark-color;
+		}
+		.recent-post-title {
+			color: $pr-color;
+		}
+		.recent-post-excerpt {
+			color: #fff;
+		}
+	}
+}
+.recent-post-img-wrap {
+	position: relative;
+}
+.recent-post-item-date {
+	position: absolute;
+	width: 50px;
+	left: 20px;
+	color: #fff;
+	text-align: center;
+	@include animate(all, 320ms);
+	&.num {
+		height: 35px;
+		top: 20px;
+		background-color: #363636;
+		border-radius: 3.0px 3.0px 0.0px 0.0px;
+		font-size: 24px;
+		line-height: 35px;
+	}
+	&.month {
+		height: 25px;
+		top: 55px;
+		background-color: #252525;
+		border-radius: 0.0px 0.0px 3.0px 3.0px;
+		font-size: 12px;
+		line-height: 25px;
+		font-weight: 400;
+	}
+}
+.recent-post-item-img {
+	display: block;
+}
+.recent-post-body {
+	padding: 30px;
+	background-color: #fff;
+	border: 1.0px solid $brd-color;
+	@include animate(all, 320ms);
+}
+.recent-post-title {
+	margin-bottom: 20px;
+}
+.recent-post-excerpt {
+	line-height: 22px;
+	margin-bottom: 30px;
+}
+.read-more-link {
+	position: relative;
+	color: $pr-color;
+	line-height: 20px;
+	&:after {
+		position: absolute;
+	    content: "";
+	    top: 5px;
+	    margin-left: 10px;
+	    width: 0;
+		height: 0;
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+		border-left: 5px solid $pr-color;
+	    @include animate(all, 320ms);
+	}
+}
+.recent-post-carousel-pgn {
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.carousel-padination-img {
+	width: 22px;
+	height: 22px;
+	margin: 0 5px;
+	border: none;
+	background-color: transparent;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	&.prev {
+		background-image: url(../img/arrow_left.svg);
+	}
+	&.next {
+		background-image: url(../img/arrow_right.svg);
+	}
+}
+/*
+	=======================
+		SECTION BRANDS LOGOS
+	=======================
+*/

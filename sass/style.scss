@@ -70,5 +70,15 @@ a {
 		background-color: $btn-active-color;
 	}
 }
+.overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: $bg-dark-color;
+    opacity: 0;
+    @include animate(opacity, 320ms);
+}
 @import './header';
 @import './base/page-front';
