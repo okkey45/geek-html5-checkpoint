@@ -370,3 +370,48 @@ video {
 		SECTION SKILLS
 	=======================
 */
+.skills {
+	height: 300px;
+	padding: 70px 0 60px;
+	background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+	box-sizing: border-box;
+}
+.skills .container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.skills-item-wrapper {
+	width: 140px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	&:after {
+		content: "";
+		width: 30px;
+		height: 2px;
+		border-bottom: 2px solid #fff;
+	}
+}
+.skills-item-icon {
+	margin-bottom: 30px;
+}
+.skills-item-num {
+	color: #fff;
+	font-size: 48px;
+	font-weight: 200;
+	line-height: 36px;
+	margin-bottom: 20px;
+}
+.skills-item-descr {
+	line-height: 20px;
+	text-transform: uppercase;
+	color: $pr-color;
+	margin-bottom: 30px;
+}
+/*
+	=======================
+		SECTION RECENT POSTS
+	=======================
+*/
