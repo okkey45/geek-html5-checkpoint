@@ -4,10 +4,15 @@
 	padding-bottom: 40px;
 }
 .pre-footer .container {
+	display: -webkit-box;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-    align-items: flex-start;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-flow: row wrap;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+    -webkit-box-align: start;
+            align-items: flex-start;
     color: $title-txt-color;
 }
 .pre-footer-col {
@@ -16,7 +21,7 @@
 		padding-top: 30px;
 	}
 }
-.brand-logo {
+.footer-brand-wrapper {
 	margin-bottom: 30px;
 }
 .pre-footer-col .about {
@@ -77,14 +82,60 @@
 		color: $btn-active-color;
 	}
 }
+.dribbble-widget-items {
+	display: -webkit-box;
+	display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+}
+.dribbble-widget-img {
+    width: 130px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    opacity: .5;
+    z-index: 0;
+    -webkit-transform: scale(1) translate(0);
+            transform: scale(1) translate(0);
+    -webkit-transition: opacity 320ms, -webkit-transform 1s;
+    transition: opacity 320ms, -webkit-transform 1s;
+    transition: opacity 320ms, transform 1s;
+    transition: opacity 320ms, transform 1s, -webkit-transform 1s;
+    &:hover {
+    	opacity: 1;
+    	z-index: 1;
+    	&:nth-child(1) {
+	        -webkit-transform: scale(1.5) translate(16%, 16%);
+	                transform: scale(1.5) translate(16%, 16%);
+    	}
+    	&:nth-child(2) {
+	        -webkit-transform: scale(1.5) translate(-16%, 16%);
+	                transform: scale(1.5) translate(-16%, 16%);
+    	}
+    	&:nth-child(3) {
+	        -webkit-transform: scale(1.5) translate(16%, -16%);
+	                transform: scale(1.5) translate(16%, -16%);
+    	}
+    	&:nth-child(4) {
+	        -webkit-transform: scale(1.5) translate(-16%, -16%);
+	                transform: scale(1.5) translate(-16%, -16%);
+    	}
+    }
+}
 .copyright {
 	padding-top: 45px;
 	padding-bottom: 52px;
 	background-color: #111111;
 	.container {
+		display: -webkit-box;
 		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		        flex-flow: row wrap;
+		-webkit-box-pack: justify;
+		        justify-content: space-between;
 	}
 	.copy-link-list,
 	.dev-link-list {
