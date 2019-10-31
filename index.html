@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Waxom : Portfolio PSD Template</title>
 	<link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
 		<h1 class="sr-only">Waxom</h1>
-		<div class="container">
-			<nav class="navbar">
+		<nav class="navbar">
+			<div class="container navbar-container">
 				<h2 class="sr-only">Main Menu</h2>
 				<span class="brand-wrapper">
 					<svg class="brand-logo-img" xmlns="http://www.w3.org/2000/svg"
@@ -19,6 +20,8 @@
 					</svg>
 					<span class="brand-logo-title homepage-logo-title">Waxom</span>
 				</span>
+				<input type="checkbox" id="menu_toggler" class="menu-check">
+				<label for="menu_toggler" class="menu-toggler">&#9776;</label>
 				<ul class="main-menu-list">
 					<li class="main-menu-list-item"><a class="main-menu-list-item-link">Home</a></li>
 					<li class="main-menu-list-item"><a class="main-menu-list-item-link">About Us</a></li>
@@ -31,8 +34,8 @@
 				</ul>
 				<button class="icon-header icon-cart"></button>
 				<button class="icon-header icon-search"></button>
-			</nav>
-		</div>
+			</div>
+		</nav>
 		<div class="slider-wrapper">
 			<div class="slider-item-wrapper">
 				<img src="./img/photo_1.png" alt="Slide 1" class="slider-item-img">
