@@ -24,7 +24,8 @@ a {
 	width: 170px;
 	height: 53px;
 	background-color: $btn-color;
-	border-radius: 3.0px;
+	border-bottom: 3px solid darken($btn-color, 20%);
+	border-radius: 4px;
 	font-family: $title-font;
 	font-size: 14px;
 	font-weight: 800;
@@ -32,6 +33,7 @@ a {
 	text-transform: uppercase;
 	line-height: 53px;
 	color: #fff;
+	box-sizing: border-box;
 	@include animate(all, 320ms);
 	&:hover {
 		background-color: $btn-hover-color;
@@ -47,7 +49,7 @@ a {
 	margin: 0 10px 10px;
 	padding: 0 18px;
 	border: 1.0px solid $brd-color;
-	border-radius: 3.0px;
+	border-radius: 3px;
 	color: $body-txt-color;
 	line-height: 32px;
 	box-sizing: border-box;
@@ -70,6 +72,13 @@ a {
 		background-color: $btn-active-color;
 	}
 }
+.btn-load-more {
+	display: block;
+	cursor: pointer;
+	margin: 0 auto;
+	border: none;
+    border-bottom: 3px solid darken($btn-color, 20%);
+}
 .overlay {
 	position: absolute;
 	top: 0;
@@ -81,6 +90,7 @@ a {
     @include animate(opacity, 320ms);
 }
 @import './header';
+@import 'base/form-search';
 @import './base/page-front';
 @import './footer';
 
