@@ -20,13 +20,21 @@
 }
 .brand-wrapper {
 	color: #fff;
-	cursor: pointer;
+	text-decoration: none;
 	&:hover {
 		.brand-logo-img {
 			fill: $pr-color;
 		}
 		.brand-logo-title {
 			color: $pr-color;
+		}
+	}
+	&:active {
+		.brand-logo-img {
+			fill: darken($pr-color, 20%);
+		}
+		.brand-logo-title {
+			color: darken($pr-color, 20%);
 		}
 	}
 }

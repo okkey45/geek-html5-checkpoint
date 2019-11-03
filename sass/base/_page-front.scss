@@ -162,25 +162,21 @@
             justify-content: space-between;
 }
 .project-item-wrp {
+	position: relative;
 	margin-bottom: 30px;
 	background-color: $bg-color;
 
 	&:hover {
-		.project-img-wrp {
-			.overlay {
-				position: absolute;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
-				background-color: $bg-dark-color;
+
+		.overlay {
+			&:after {
 				opacity: .8;
 			}
-			.project-item-link-big-img,
-			.project-item-link {
-				opacity: 1;
-				z-index: 10;
-			}
+		}
+		.project-item-link-big-img,
+		.project-item-link {
+			opacity: 1;
+			z-index: 10;
 		}
 		.project-item-txt {
 			background-color: $bg-dark-color;
@@ -198,10 +194,6 @@
 }
 .project-img-wrp {
 	position: relative;
-	.overlay {
-		opacity: 0;
-		@include animate(all, 320ms);
-	}
 }
 .project-item-link {
 	position: absolute;
@@ -325,8 +317,9 @@
 	line-height: 28px;
 	text-align: center;
 }
-video {
+.presentation-video {
 	width: 100%;
+	height: auto;
 }
 /*
 	=======================
@@ -402,6 +395,7 @@ video {
 }
 .skills-item-wrapper {
 	width: 140px;
+	text-align: center;
 	display: -webkit-box;
 	display: flex;
 	-webkit-box-orient: vertical;
@@ -423,24 +417,11 @@ video {
 	width: 47px;
     height: 47px;
 	margin-bottom: 30px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    &.skills-item-icon-pers {
-    	background-image: url(../img/icon_pers.svg);
-    }
+	fill: $pr-color;
     &.skills-item-icon-coffee {
-    	background-image: url(../img/icon_coffee.svg);
     	width: 51px;
     }
-    &.skills-item-icon-chat {
-    	background-image: url(../img/icon_chat.svg);
-    }
-    &.skills-item-icon-heart {
-    	background-image: url(../img/icon_heart.svg);
-    }
     &.skills-item-icon-launch {
-    	background-image: url(../img/icon_launch.svg);
     	width: 57px;
     }
 }
@@ -474,11 +455,16 @@ video {
 .recent-post-item {
 	width: 370px;
 	margin-bottom: 30px;
+	
 	&:hover {
+		
 		.overlay {
-			opacity: .8;
+			&:after {
+				opacity: .8;
+			}
 		}
 		.recent-post-item-date {
+			z-index: 10;
 			&.num {
 				background-color: $pr-color;
 			}
@@ -557,6 +543,20 @@ video {
 		border-bottom: 5px solid transparent;
 		border-left: 5px solid $pr-color;
 	    @include animate(all, 320ms);
+	}
+	&:hover {
+		color: #fff;
+
+		&:after {
+			border-left: 5px solid #fff;
+		}
+	}
+	&:active {
+		color: darken($pr-color, 20%);
+
+		&:after {
+			border-left: 5px solid darken($pr-color, 20%);
+		}
 	}
 }
 .recent-post-carousel-pgn {
