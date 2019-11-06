@@ -28,6 +28,20 @@
 	margin-bottom: 30px;
 	line-height: 24px;
 	border-bottom: none;
+
+	&:hover {
+		color: $pr-color;
+	}
+}
+.pre-footer-col-twitter {
+	.pre-footer-col-item:hover {
+		p {
+			color: $pr-color;
+		}
+		.post-meta-date {
+			color: #fff;
+		}
+	}
 }
 .pre-footer .read-more-link{
 	color: #d1d1d1;
