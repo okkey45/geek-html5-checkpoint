@@ -50,9 +50,15 @@ a {
 	padding: 0 18px;
 	border: 1.0px solid $brd-color;
 	border-radius: 3px;
+	background-color: transparent;
 	color: $body-txt-color;
+	font-family: $body-font;
+	font-size: 1rem;
 	line-height: 32px;
 	box-sizing: border-box;
+	cursor: pointer;
+	-webkit-transition: background-color 320ms, color 320ms, border 320ms;
+	transition: background-color 320ms, color 320ms, border 320ms;
 	&.active {
 		color: #fff;
 		border: 1.0px solid $btn-color;
